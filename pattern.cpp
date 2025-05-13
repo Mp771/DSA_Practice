@@ -1,7 +1,9 @@
 #include <iostream>
 using namespace std ;
 
-   /* int n;
+   /*pattern 1 */ 
+int main (){    
+int n;
     cin>> n;
 
     int i = 1;
@@ -17,7 +19,9 @@ using namespace std ;
         cout<<endl;
         i=i+1;
         
-    }
+    }}
+ /*pattern 2 */ 
+int main(){
     int n;
     cin>> n;
 
@@ -34,7 +38,9 @@ using namespace std ;
         cout<<endl;
         i=i+1;
         
-    }
+    }}
+/*pattern 3*/ 
+int main(){
     int n;
     cin>> n;
 
@@ -53,7 +59,8 @@ using namespace std ;
         cout<<endl;
         i=i+1;
         
-    }
+    }}
+/*pattern 4*/ 
 int main(){
     int n;
     cin >> n;
@@ -76,7 +83,7 @@ int main(){
         
     }
 }
-
+/*pattern 5*/ 
  int main(){
     int n  ;
     cin>> n;
@@ -95,7 +102,7 @@ int main(){
     }
     
  }
-
+/*pattern 6*/ 
 int main(){
     int n;
     cin>> n;
@@ -115,7 +122,7 @@ int main(){
         row = row +1;        
     }
   }
-
+/*pattern 7*/ 
 int main(){
 int n;
 cin>>n;
@@ -135,7 +142,7 @@ while (i<=n)
 }
 
 }
-
+/*pattern 8*/ 
 int main(){
     int n;
     cin>> n;
@@ -156,7 +163,7 @@ int main(){
     }
     
 }
-
+/*pattern 9*/ 
 int main(){\
 
     int n ;
@@ -178,7 +185,7 @@ int main(){\
     }
     
 }
-
+/*pattern 10*/ 
 int main(){
 
     int n;
@@ -203,7 +210,7 @@ int main(){
     
 
 }
-
+/*pattern 11*/ 
 int main(){
     int n ;
     cin >> n;
@@ -224,6 +231,7 @@ int main(){
 
 }
 
+/*pattern 12*/ 
 int main(){
     int n;
     cin >> n;
@@ -243,7 +251,7 @@ int main(){
     }
     
 }
-
+/*pattern 13*/ 
  int main(){
     int n;
     cin >> n;
@@ -262,8 +270,8 @@ int main(){
         cout << endl;
         i = i + 1;
     }
- }*/
-
+ }
+/*pattern 14*/ 
  int main(){
     int n;
     cin >> n;
@@ -281,3 +289,5 @@ int main(){
         cout << endl;
         i = i + 1;
     }
+/*pattern 15*/ 
+
