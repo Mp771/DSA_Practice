@@ -373,3 +373,133 @@ int main(){
         i=i+1;
     }
 } 
+/*pattern 19*/
+int main(){
+
+    int n;
+    cin >> n;
+    int i = 1;
+    while (i<=n){
+        int space = i-1;
+        while (space) {
+            cout<<" ";
+            space = space - 1;
+        }
+        int j = 1;
+        int star = n - i + 1;
+        while (j<=star){
+            cout<< "*";
+            j = j + 1;
+        }
+        cout<< endl;
+        i = i + 1;
+    }
+}
+/*pattern 20*/ 
+int main() {
+    int n;
+    cin >> n;
+
+    int i = 1;
+    while (i <= n) {
+        int space = i - 1;
+        while (space) {
+            cout << " ";
+            space = space - 1;
+        }
+        int j = 1;
+        int cols = n - i + 1;
+        while (j <= cols) {
+            cout << i;
+            j = j + 1;
+        }
+        cout << endl;
+        i = i + 1;
+    }
+}
+/*pattern 21 */
+int main() {
+    int n;
+    cin >> n;
+
+    int i = 1;
+    while (i <= n) {
+        int space = n - i;
+        while (space) {
+            cout << " ";
+            space = space - 1;
+        }
+        int j = 1;
+        while (j <= i) {
+            cout << i;
+            j = j + 1;
+        }
+        cout << endl;
+        i = i + 1;
+    }
+}
+/*pattern 22*/
+int main() {
+    int n;
+    cin >> n;
+
+    int i = 1;
+    while (i <= n) {
+        int space = n - i;
+        while (space) {
+            cout << " ";
+            space = space - 1;
+        }
+        int j = 1;
+        while (j <= i) {
+            cout << j;
+            j = j + 1;
+        }
+       int start = i-1;
+       while(start){
+          cout<< start;
+          start = start-1;
+       }
+        cout << endl;
+        i = i + 1;
+    }
+}
+/*pattern 23 
+1234554321
+1234**4321
+123****321
+12******21
+1********1     */
+int main(){
+   int n;
+   cin>>n;
+  
+   int row=1;
+
+  while(row<=n){
+    // first triangle
+    int col=1;
+    int value = n - row + 1;
+    while(col<=value){
+      cout<<col;
+      col++;
+    }
+
+    // star
+    int start = 2 * (row - 1);
+    while(start){
+      cout<<"*";
+      start--;
+    }
+
+    // second triangle
+    int count = n - row + 1;
+     while(count){
+       cout<<count;
+       count--;
+     }
+    
+    cout<<endl;
+    row++;
+  }
+}
