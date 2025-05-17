@@ -18,4 +18,50 @@ using namespace std;
     cout<< (21<<2) << endl ;
 }*/
 
+int main (){
+    int i= 7;
+    cout<< (++i) << endl ; // pre increment
+    cout<< (i++) << endl ; // post increment    
+    cout<< (i--) << endl ; // pre decrement
+    cout<< (--i) << endl ; // post decrement
+}
+
+int main()
+{
+    int a, b =1;
+    a =10;
+    if (++a)
+     cout<<b;
+    else
+        cout<<++b;
+}
+ 
+int main(){
+    int a = 1;
+    int b = 2;
+
+    if (a-- > 0 && ++b > 2){
+        cout<<"Stage 1-Inside if " ;
+    } else{
+        cout<<"stage 2 - Inside Else";}
+    cout<<a << " " << b << endl;
+}
+
+int main(){
+    int number = 3;
+    cout<< (25*(++number)) << endl ;
+}
+
+int main(){
+    int a = 1;
+    int b = a++;
+    int c = ++a;
+    cout<< b<<endl;
+    cout<< c;
+}*/
+
+/*#For Loop*/
+
+
+
  
