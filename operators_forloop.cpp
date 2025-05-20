@@ -74,6 +74,54 @@ int main(){
     
 }
 
+int main(){
+    int m;
+    cout<<"Enter value of m"<< endl;
+
+
+    cout<<"Print count from m to 1 "<< endl;
+  
+    for(int a = 0,b=1; a>= 0 && b>=1; a--,b--){
+        cout<< a<< " " << b << endl;        
+    }
+}
+
+ /*#sum of upto n numbers*/
+int main(){
+    int n;
+    cout<<"Enter value of n"<< endl;
+    cin>>n;
+
+    int sum = 0;
+    
+    for(int i = 1; i <= n; i++){
+        sum += i;        
+    }
+    cout<< "Sum of first " << n << " numbers is " << sum << endl;
+}
+
+/*#Fibonacci Series */
+int main(){
+    int n= 10;
+
+    int a =0;
+    int b = 1;
+    cout<< a << " " << b << " " ; 
+    for (int i = 1; i <=n; i++)
+    {
+        int nextnumber= a + b;
+        cout<< nextnumber << " " ;
+
+        a=b;
+        b= nextnumber;
+    }
+    
+}
+
+
+
+ 
+
 
 
  
