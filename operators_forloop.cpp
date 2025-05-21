@@ -118,6 +118,121 @@ int main(){
     
 }
 
+/*Prime no. with For Loop*/
+int main(){
+    int n;
+    cout<<"Enter value of n"<< endl;
+    cin>>n;
+
+    bool isPrime = 1 ;
+
+    for (int i = 2; i<n; i++)
+    {
+        if (n%i==0)
+        {
+            isPrime = 0;
+            break;
+        }
+    }
+    
+    if (isPrime==0)
+    {
+        cout<< n << " is not a prime number" << endl;
+    }
+    else
+    {
+        cout<< n << " is a prime number" << endl;
+    }
+
+        
+    }
+    
+/*Use of Continue- skips the next iteration */
+
+int main(){
+
+   for (int i = 0; i < 5; i++)
+   {
+    cout<< "hii" << endl;
+    cout<< "hello" << endl;
+    continue;
+    
+    cout<< "reply" << endl;
+   }
+    
+}
+/*q1*/
+int main(){
+    for (int i = 0; i <=5; i++)
+    {
+        cout<< i << " " ;
+        i++;
+    }
+    
+} /*Ans- 0 2 4*/ 
+
+/*q2*/
+int main(){
+    for (int i = 0; i <=5; i--)
+    {
+        cout<< i << " " ;
+        i++;
+    }
+    
+} /*Ans- infinte loop 0 */
+
+/*q3*/
+int main(){
+    for (int i = 0; i <=5; i+=2)
+    {
+        cout<< i << " " ;
+        
+        if (i&1)
+        {
+            continue;
+        }
+        i++;
+    }
+    
+} /*Ans - 0 3 5*/
+/*q4*/
+
+int main(){
+    for (int i = 0; i < 5; i++)
+    {
+        for ( int j= 1; j <=5; j++)
+        {
+            cout<< i << " " << j << endl;
+        }
+        
+    }
+    
+} /*Ans- inner loop runs 5 times with same value of outer loop for 5 times each*/
+
+/*q5*/
+int main(){
+    for (int i = 0; i < 5; i++)
+    {
+        for ( int j= i; j <=5; j++)
+        {
+        if(i+j == 10){
+            break;
+        }
+            cout<< i << " " << j << endl;
+             
+    }
+}
+}
+
+
+ 
+
+
+
+
+
+ 
+
 
 
  
