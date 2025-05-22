@@ -223,6 +223,68 @@ int main(){
     }
 }
 }
+#include<iostream>
+#include <cstdint>
+using namespace std;
+/*subtract the product and sum of digits of an integer
+class Solution{
+    public:
+    int subtractProductAndSum(int n){
+        int prod = 1;
+        int sum = 0;
+
+        while (n!=0)
+        {
+            int digit = n%10;
+            prod= prod * digit;
+            sum = sum+ digit;
+            n = n/10;
+        }
+        return prod - sum;
+    }
+};
+
+int main() {
+    Solution sol;
+    int n;
+    std::cout << "Enter a number: ";
+    std::cin >> n;
+    int result = sol.subtractProductAndSum(n);
+    std::cout << "Product minus sum of digits: " << result << std::endl;
+    return 0;
+}*/
+
+/* Check no. of 1 bit */
+class Solution {
+public:
+    int hammingWeight(uint32_t n) {
+        int count = 0;
+
+        while (n != 0) {
+            if (n&1){
+                count++; 
+            }
+            n= n >> 1; 
+        }
+        return count;
+    }
+};
+
+int main() {
+    Solution sol;
+    uint32_t n;
+    cout << "Enter a number: ";
+    cin >> n;
+    int result = sol.hammingWeight(n);
+    cout << "Number of 1 bits: " << result << endl;
+    return 0;
+}
+
+
+
+
+ 
+
 
 
  
