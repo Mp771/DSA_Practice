@@ -71,7 +71,10 @@ switch (1)
     }
 return 0;
 
-}
+}*/
+
+
+
 // Function to calculate power of a number
 int power(int num1,int num2){
     int ans = 1;
@@ -89,7 +92,9 @@ int main(){
     int answer = power(a, b);
     cout << "The power of " << a << " raised to " << b << " is: " << answer << endl;
     return 0;
-}*/
+}
+
+
 
 //function to calculate even or odd
 
@@ -116,4 +121,74 @@ int main(){
         cout << num << " is odd." << endl;
     }
     return 0;
+}
+
+
+//nCr function
+
+int factorial(int n){
+    int fact = 1;
+    for (int i =1; i<=n;i++){
+        fact= fact*i;
+    }
+    return fact;
+}
+
+int nCr(int n,int r){
+
+    int num = factorial(n);
+    int denom = factorial(r)*factorial(n-r);
+    return num / denom;
+
+}
+
+int main(){
+    int n , r;
+    cout << "Enter n and r: ";
+    cin >> n >> r;
+
+    cout <<"Answer is : "<< nCr(n, r) << endl;
+
+}
+
+
+
+//print counting from 1 to n
+
+void printcounting(int n){
+    for(int i =1; i<=n;i++){
+        cout<< i << " ";
+    }
+    cout<<endl;
+}
+int main(){
+    int n;
+    cin >> n;
+
+    printcounting(n);
+
+}
+
+
+//prime using functions 
+
+bool isPrime(int n){
+    for (int i =2; i<n;i++){
+        if (n%i==0){
+            return 0; 
+        }
+    }
+    return 1;
+}
+
+
+int main(){
+    int n;
+    cin>> n;
+
+    if (isPrime(n)){
+        cout << n << " is a prime number." << endl;
+    } else {
+        cout << n << " is not a prime number." << endl; 
+    }
 }
